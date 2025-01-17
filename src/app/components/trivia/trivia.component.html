@@ -1,1 +1,36 @@
-<p>trivia works!</p>
+<div id="question-container">
+  <ng-container *ngIf="question; else quizComplete">
+    <p>
+      <b>{{ question.category }}</b>
+    </p>
+    <label
+      id="question-radio-group-label"
+      [innerHTML]="question.question"
+    ></label>
+    <mat-radio-group
+      aria-labelledby="question-radio-group-label"
+      class="question-radio-group"
+      [(ngModel)]="answer"
+    >
+      <mat-radio-button
+        class="question-radio-button"
+        *ngFor="let answer of question.answers"
+        [value]="answer"
+      >
+        {{ answer.answer }}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <div *ngIf="answer">
+      <div *ngIf="answer.is_correct; else incorrect">
+        <p>Correct!</p>
+      </div>
+      <ng-template #incorrect>
+        <p>Wrong! The correct answer is {{ getCorrectAnswer() }}</p>
+      </ng-template>
+    </div>
+  </ng-container>
+  <ng-template #quizComplete>
+    <p>We're all out of questions!</p>
+  </ng-template>
+</div>
