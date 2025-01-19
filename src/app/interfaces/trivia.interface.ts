@@ -3,12 +3,12 @@ export interface Answer {
   is_correct: boolean;
 }
 
-interface AnswerArray extends Array<Answer> {}
+// interface AnswerArray extends Array<Answer> {}
 
 export interface Question {
   question: string;
   category: string;
-  answers: AnswerArray;
+  answers: Answer[];
 }
 
-export interface QuestionArray extends Array<Question> {}
+// export interface QuestionArray extends Array<Question> {}

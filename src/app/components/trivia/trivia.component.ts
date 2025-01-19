@@ -6,11 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { Subscription } from 'rxjs';
 
 import { TriviaService } from '../../services/trivia.service';
-import {
-  Answer,
-  Question,
-  QuestionArray,
-} from '../../interfaces/trivia.interface';
+import { Answer, Question } from '../../interfaces/trivia.interface';
 
 @Component({
   selector: 'app-trivia',
@@ -19,13 +15,13 @@ import {
   styleUrl: './trivia.component.css',
 })
 export class TriviaComponent implements OnInit, OnDestroy {
-  triviaData: QuestionArray = [];
+  triviaData: Question[] = [];
   question: Question | null = null;
   answer: Answer | null = null;
-  disableRadioButtons: boolean = false;
-  disableNextButton: boolean = true;
-  questionNumber: number = 0;
-  correctAnswers: number = 0;
+  disableRadioButtons = false;
+  disableNextButton = true;
+  questionNumber = 0;
+  correctAnswers = 0;
 
   private subscriptions: Subscription = new Subscription();
 

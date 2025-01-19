@@ -9,10 +9,7 @@
     <p>
       <b>{{ question.category }}</b>
     </p>
-    <label
-      id="question-radio-group-label"
-      [innerHTML]="question.question"
-    ></label>
+    <p id="question-radio-group-label" [innerHTML]="question.question"></p>
     <mat-radio-group
       aria-labelledby="question-radio-group-label"
       class="question-radio-group"
