@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1737295854876,
+  "timestamp": 1737296690338,
   "index": "/trivia_web/index.html",
   "assetGroups": [
     {
@@ -18,7 +18,7 @@
         "/trivia_web/main-BVVEL56F.js",
         "/trivia_web/manifest.webmanifest",
         "/trivia_web/polyfills-FFHMD2TL.js",
-        "/trivia_web/styles-7JSMSIMA.css"
+        "/trivia_web/styles-4DFNLIIB.css"
       ],
       "patterns": []
     },
@@ -55,11 +55,11 @@
     "/trivia_web/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/trivia_web/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/trivia_web/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/trivia_web/index.html": "709f02e6d61dd4e4a994b5adf58bd583e2e32467",
+    "/trivia_web/index.html": "33a7a2b93d1a4a08fd641308a38a6c5c802545b4",
     "/trivia_web/main-BVVEL56F.js": "1300e75f17c20ec39a60c687dda739787d3683ad",
-    "/trivia_web/manifest.webmanifest": "ae6bccc483f5bf1221bcc81d085148b184069ebf",
+    "/trivia_web/manifest.webmanifest": "c9f1c1070ce493f808923a820822eef8f4c698d1",
     "/trivia_web/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
-    "/trivia_web/styles-7JSMSIMA.css": "00baf57bfb1b58f4dd642fb8de0b9ed01ef08391"
+    "/trivia_web/styles-4DFNLIIB.css": "d9b9cdfb26df37427a71b436ee344563b07c463b"
   },
   "navigationUrls": [
     {
