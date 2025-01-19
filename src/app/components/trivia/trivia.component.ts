@@ -80,4 +80,11 @@ export class TriviaComponent implements OnInit, OnDestroy {
     }
     return '';
   }
+
+  resetTrivia() {
+    this.questionNumber = 0;
+    this.correctAnswers = 0;
+
+    this.getTrivia();
+  }
 }
