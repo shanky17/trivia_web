@@ -39,6 +39,7 @@ jobs:
     deploy:
         needs: build
         runs-on: ubuntu-latest
+        if: github.ref == 'refs/heads/master' # Only run on master branch
         permissions:
             pages: write
             id-token: write
