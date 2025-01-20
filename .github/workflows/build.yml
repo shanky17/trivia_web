@@ -41,5 +41,9 @@ jobs:
               with:
                   branch: gh-pages
                   folder: dist/trivia_web/browser
-                  clean: true
-                  silent: false
+
+            - name: Fetch Deployment Workflow Link 🔗
+              run: |
+                  gh_pages_workflow=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                  "https://api.github.com/repos/${{ github.repository }}/actions/runs?branch=gh-pages&event=push" | jq '.workflow_runs[0].html_url')
+                  echo "Related Workflow: $gh_pages_workflow" >> $GITHUB_STEP_SUMMARY
